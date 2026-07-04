@@ -3,49 +3,36 @@
 ![SQL](https://img.shields.io/badge/SQL-Database-blue?style=for-the-badge)
 ![DBMS](https://img.shields.io/badge/DBMS-Course%20Project-success?style=for-the-badge)
 ![Normalization](https://img.shields.io/badge/Database-3NF-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Educational-red?style=for-the-badge)
 
-A comprehensive relational database system designed to model, manage, and analyze a modern **Music Streaming Platform**. The project simulates real-world streaming services by managing listeners, artists, labels, albums, songs, playlists, subscriptions, advertisements, and playback analytics using an optimized relational database with efficient SQL queries.
+A DBMS course project that models a modern music streaming platform. The database manages listeners, artists, albums, songs, playlists, subscriptions, advertisements, and streaming analytics using an efficient relational database design.
 
 ---
 
 ## 📚 Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Project Structure](#-project-structure)
-- [Database Schema](#-database-schema)
-- [Platform Features](#-platform-features)
-- [Basic SQL Queries](#-basic-sql-queries)
-- [Advanced SQL Analytics](#-advanced-sql-analytics)
-- [Technologies Used](#-technologies-used)
-- [Learning Outcomes](#-learning-outcomes)
-- [Team Members](#-team-members)
-- [License](#-license)
+- Project Overview
+- Project Structure
+- Database Schema
+- Features
+- SQL Queries
+- Technologies Used
+- Learning Outcomes
+- Team Members
 
 ---
 
 # 📖 Project Overview
 
-**StreamDB** is a Database Management System (DBMS) course project that models a digital music streaming platform similar to Spotify, Apple Music, or YouTube Music.
-
-The system allows:
-
-- 🎧 Listeners to stream music
-- 🎤 Artists to upload songs and albums
-- 🏢 Music Labels to manage artists
-- 📊 Administrators to monitor advertisements, subscriptions, and revenue
-
-The project focuses on efficient relational database design, normalization, SQL implementation, and analytical reporting.
+**StreamDB** is a relational database designed for a music streaming platform similar to Spotify. It supports different user roles including listeners, artists, music labels, and administrators while providing efficient data management and analytical reporting.
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 StreamDB/
 │
 ├── README.md
-│
 ├── docs/
 │   ├── Project_Report.pdf
 │   └── ERD_Normalization.pdf
@@ -64,145 +51,79 @@ StreamDB/
 
 # 🗄 Database Schema
 
-The project consists of the following major entities:
+The database includes the following main entities:
 
-- `Users`
-- `Listeners`
-- `Artists`
-- `Music Labels`
-- `Albums`
-- `Songs`
-- `Genres`
-- `Playlists`
-- `Playlist Songs`
-- `Listening History`
-- `Subscriptions`
-- `Advertisements`
-- `Ratings`
-- `Artist Followers`
-- `Playback Logs`
-- `Advertisement Playbacks`
+- Users
+- Listeners
+- Artists
+- Music Labels
+- Albums
+- Songs
+- Genres
+- Playlists
+- Listening History
+- Ratings
+- Subscriptions
+- Advertisements
+- Artist Followers
 
-These entities are connected using **Primary Keys**, **Foreign Keys**, and **Relational Constraints** to ensure data consistency and integrity.
+All entities are connected using **Primary Keys**, **Foreign Keys**, and relational constraints.
 
 ---
 
-# 🚀 Platform Features
+# 🚀 Features
 
-## 🌐 Unlogged Users
+### 👤 Users
+
+- Search songs by title, artist, album, or genre
+- Browse albums and artists
+- View trending songs
+
+### 🎧 Registered Listeners
+
+- User registration
+- Playlist management
+- Listening history
+- Song ratings
+- Artist following
+- Free & Premium subscriptions
+
+### 🎤 Artists & Labels
+
+- Upload songs and albums
+- Manage music catalog
+- View streaming statistics
+
+### 🛠 Administrator
+
+- Manage advertisements
+- Track subscriptions
+- Generate reports
+
+---
+
+# 🔍 SQL Queries
+
+### Basic Queries
 
 - Search songs
-- Browse artists
-- View albums
-- Explore trending songs
-- View song details
-- Advertisement-supported playback
+- View playlists
+- Listening history
+- Artist followers
+- Song ratings
+- Album information
 
----
+### Advanced Queries
 
-## 🎧 Registered Listeners
-
-- User Registration
-- Free & Premium Subscription
-- Playlist Management
-- Song Ratings
-- Listening History
-- Follow Favorite Artists
-- Personalized Music Experience
-- Ad-Free Streaming (Premium)
-
----
-
-## 🎤 Artists & Music Labels
-
-- Upload Songs
-- Create Albums
-- Organize Music Catalog
-- View Streaming Analytics
-- Monitor Listener Demographics
-- Analyze Song Popularity
-
----
-
-## 🛠 Platform Administrator
-
-- Advertisement Management
-- Revenue Tracking
-- Subscription Monitoring
-- Royalty Reports
-- Content Auditing
-
----
-
-# 🔍 Basic SQL Queries
-
-The project implements several day-to-day database operations including:
-
-- Search songs by title
-- Search songs by artist
-- Search songs by album
-- Search songs by genre
-- View song details
-- Retrieve playlists
-- Display listening history
-- View artist followers
-- Show subscription details
-- Display song ratings
-- Retrieve album information
-
----
-
-# 📊 Advanced SQL Analytics
-
-The project provides several analytical reports including:
-
-### 🎵 Streaming Analytics
-
-Daily, Weekly, Monthly, and Yearly streaming reports.
-
-### 🎼 Genre Popularity Report
-
-Most streamed genres across the platform.
-
-### 🎤 Artist Performance
-
-Total streams generated by every artist.
-
-### 💿 Album Performance
-
-Album-wise streaming statistics.
-
-### 🌍 Country-wise Listener Analysis
-
-Distribution of listeners across different countries.
-
-### ⭐ Top Listeners
-
-Most active listeners based on playback history.
-
-### 👎 Poor Ratings Report
-
-Songs receiving low ratings from listeners.
-
-### ❤️ Artist Followers Report
-
-Total followers for every artist.
-
-### 💰 Advertisement Revenue Report
-
-Advertisement statistics grouped by advertiser and genre.
-
-### 💎 Subscription Conversion Report
-
-Users upgraded from Free to Premium.
-
-### 💵 Royalty Ledger
-
-Revenue generated for artists based on song streams.
-
-### 📈 Content Audit Report
-
-Songs frequently added to playlists but having low playback counts.
+- Streaming analytics
+- Genre popularity
+- Artist performance
+- Album performance
+- Top listeners
+- Advertisement revenue
+- Subscription analysis
+- Royalty reports
+- Content audit
 
 ---
 
@@ -211,29 +132,17 @@ Songs frequently added to playlists but having low playback counts.
 - SQL
 - Relational Database Management System (RDBMS)
 - ER Modeling
-- Database Normalization (up to 3NF)
-- Joins
-- Aggregate Functions
-- Nested Queries
-- Views
-- Constraints
-- Foreign Keys
-- Primary Keys
+- Database Normalization (3NF)
 
 ---
 
 # 🎯 Learning Outcomes
 
-Through this project, we gained practical experience in:
-
-- Designing normalized relational databases
-- Creating Entity Relationship Diagrams (ERD)
-- Applying normalization techniques (up to 3NF)
-- Implementing relational constraints
-- Writing efficient SQL queries
-- Developing analytical reports
-- Modeling real-world streaming workflows
-- Applying DBMS concepts in a practical application
+- Designed a normalized relational database
+- Implemented primary and foreign key relationships
+- Wrote basic and advanced SQL queries
+- Built analytical reports using SQL
+- Applied DBMS concepts to a real-world application
 
 ---
 
@@ -241,16 +150,14 @@ Through this project, we gained practical experience in:
 
 | Name | ID |
 |------|------|
-| **Yuvraj Chauhan** | 202401412 |
-| **Dhruvkumar Mistri** | 202401433 |
-| **Jenil Jayeshkumar Mistri** | 202401434 |
-| **Digvijay Parmar** | 202401444 |
-| **Shlok Gohel** | 202401476 |
+| Yuvraj Chauhan | 202401412 |
+| Dhruvkumar Mistri | 202401433 |
+| Jenil Jayeshkumar Mistri | 202401434 |
+| Digvijay Parmar | 202401444 |
+| Shlok Gohel | 202401476 |
 
 ---
 
 # 📜 License
 
-This project was developed as part of the **Database Management Systems (DBMS)** course at **Dhirubhai Ambani University** for educational purposes only.
-
----
+Developed as part of the **Database Management Systems (DBMS)** course at **Dhirubhai Ambani University** for educational purposes.
