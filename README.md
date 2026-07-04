@@ -254,5 +254,3 @@ Through this project, we gained practical experience in:
 This project was developed as part of the **Database Management Systems (DBMS)** course at **Dhirubhai Ambani University** for educational purposes only.
 
 ---
-
-## ⭐ If you found this project useful, consider giving it a Star!
